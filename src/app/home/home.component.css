@@ -1,0 +1,305 @@
+.navBar {
+  flex: 1 1 auto;
+}
+
+/* Global styles */
+.navLogoImg,
+.navProfileImg {
+  width: 40px;
+  margin: 7px 12px 0px 0px;
+}
+
+#headerName {
+  font-family: sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* Flexbox Utilities */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/* Table and Button Styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.w-100,
+.example-full-width {
+  width: 100%;
+}
+
+/* button[mat-raised-button] {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[mat-raised-button]:hover {
+  opacity: 0.9;
+}
+
+button[mat-icon-button] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+} */
+
+button[mat-icon-button]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Form Field Styles */
+/* mat-form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+mat-form-field input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+/* Typography */
+p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.copyright {
+  margin: 0;
+  font-size: 16px !important;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.matIcon {
+  font-size: 18px;
+  position: relative;
+  top: 9px;
+}
+
+/* Card Styles */
+mat-card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+/* Table */
+table.mat-table {
+  border-collapse: collapse;
+  width: 100%;
+  /* margin: 1rem 0; */
+}
+
+/* .mat-cell,
+.mat-header-cell {
+  border: 1px solid #ddd;
+}
+
+.mat-row,
+.mat-header-row {
+  border-bottom: 1px solid #ddd;
+} */
+
+th.mat-header-cell,
+td.mat-cell {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th.mat-header-cell {
+  font-weight: 600;
+}
+
+tr.mat-row:hover {
+  background-color: #f9f9f9;
+}
+
+tr.mat-row:last-child td {
+  border-bottom: none;
+}
+
+.mat-no-data-row {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Small devices (phones, < 425px) */
+@media screen and (max-width: 425px) {
+  .navLogoImg,
+  .navProfileImg {
+    width: 25px;
+    margin: 5px 8px 0px 7px;
+  }
+
+  #headerName {
+    font-size: medium;
+    margin-left: 8px;
+  }
+
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    padding: 0 4px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Medium devices (tablets, 426px - 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .navLogoImg,
+  .navProfileImg {
+    width: 30px;
+    margin: 6px 10px 0px 10px;
+  }
+
+  #headerName {
+    font-size: large;
+    margin-left: 10px;
+  }
+
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    padding: 0 6px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+/* Large devices (landscape tablets, small laptops, 769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navLogoImg,
+  .navProfileImg {
+    width: 35px;
+    margin: 6px 12px 0px 12px;
+  }
+
+  #headerName {
+    font-size: medium;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+/* Extra large devices (desktops, > 1024px) */
+@media screen and (min-width: 1025px) {
+  .navLogoImg,
+  .navProfileImg {
+    width: 40px;
+    margin: 7px 12px 0px 0px;
+  }
+
+  #headerName {
+    font-size: large;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+.snackbar-success {
+  background-color: #4caf50; /* Green */
+  color: #ffffff;
+}
+
+.snackbar-error {
+  background-color: #f44336; /* Red */
+  color: #ffffff;
+}
+
+.snackbar-warning {
+  background-color: #ff9800; /* Orange */
+  color: #ffffff;
+}
